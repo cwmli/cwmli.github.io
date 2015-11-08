@@ -1,0 +1,257 @@
+html, body {
+  max-width: 100%;
+	margin: 0px;
+	padding: 0px;
+
+  color: #565555;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+}/*force no horizontal scroll*/
+
+h1, h3{
+  display: inline-block;
+  border-bottom: 0.05em solid #565555;
+
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+.wrapper{
+  text-align: center;
+}
+
+.top{
+  position: fixed;
+  right: 0.5em;
+  bottom: 0em;
+  width: 2em;
+  height: 2em;
+
+  display: hidden;
+
+  text-align: center;
+  line-height: 2em;
+  color: white;
+  font-size: 2em;
+
+  background-color: #565555;
+  z-index: 100;
+
+  -webkit-transition: background 0.25s linear;
+  -moz-transition: background 0.25s linear;
+  transition: background 0.25s linear;
+}
+
+.top:hover{
+  cursor: hand;
+  background-color: black;
+}
+
+.container{
+  width: 1200px;
+  height: auto;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 2em;
+
+  text-align: left;
+}
+
+.subtitle{
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+
+  font-size: 2em;
+  font-weight: 400;
+}
+
+.three-row{
+    width: calc((100% - 5em) / 3);
+}
+
+.two-row{
+  width: calc((100% - 5em) / 2);
+}
+
+.card{
+  position: relative;
+  display: inline-block;
+  height: calc((100% - 1.5em) / 3);
+
+  margin: 0.5em;
+
+  background-size: cover;
+}
+
+.icon{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+
+  display: inline-block;
+  width: 6.25em;
+  height: 6.25em;
+  border-radius: 3.125em;
+  -webkit-border-radius: 3.125em;
+  -moz-border-radius: 3.125em;
+
+  background: white url(images/ico.png) no-repeat center;
+  background-size: 6.25em 6.25em;
+}
+.mask:before{
+    content: '';
+    opacity: 0;
+
+    -webkit-transition: background 0.25s linear;
+    -moz-transition: background 0.25s linear;
+    transition: background 0.25s linear;
+}
+
+.mask:hover:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  opacity: 1;
+
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  -webkit-border-radius: inherit;
+  -moz-border-radius: inherit;
+
+  background: rgba(0, 0, 0, 0.75);
+}
+.mask-info{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+
+  opacity: 0;
+
+  display: block;
+
+  color: white;
+  text-align: center;
+
+  padding: .25em;
+
+  -webkit-transition: all 0.25s linear;
+  -moz-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+.symbol{
+  float:left;
+
+  display: inline-block;
+  width: 3em;
+  height: 3em;
+
+  background: transparent url(images/title.png) no-repeat center;
+  background-size: 3em 3em;
+}
+
+.title{
+  position: absolute;
+  right: 0em;
+  top: -2.5em;
+
+  font-size: 3em;
+  font-weight: 600;
+}
+.title:after{
+  content: "Calvin's Collective";
+  position: absolute;
+  right: 0.5em;
+  bottom: -0.75em;
+
+  font-size: 0.5em;
+  font-weight: 300;
+}
+
+nav{
+  position: fixed;
+  top: 0;
+
+  display: block;
+  width: 1200px;
+  height: 5%;
+  background-color: transparent;
+
+  z-index: 100;
+
+  padding: 0.5em;
+}
+
+nav > a{
+  margin: 1em;
+  float: right;
+
+  color: black;
+  font-weight: 600;
+  font-size: 0.75em;
+  text-decoration: none;
+
+  -webkit-transition: color 0.25s linear;
+  -moz-transition: color 0.25s linear;
+  transition: color 0.25s linear;
+}
+
+nav > a:hover{
+  color: #3da744;
+}
+
+.selected{
+  color: #3da744;
+}
+
+.button{
+  display: block;
+  width: 3em;
+  padding: 0.5em;
+  background-color: #565555;
+
+  text-align: center;
+
+  color: white;
+  font-weight: 400;
+  font-size: 1em;
+  text-decoration: none;
+
+  -webkit-transition: all 0.25s linear;
+  -moz-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+.button:hover{
+  background-color: black;
+  color: #3da744;
+}
+
+.more{
+  color: white;
+  font-weight: 600;
+  font-size: 0.75em;
+  text-decoration: none;
+
+  -webkit-transition: color 0.25s linear;
+  -moz-transition: color 0.25s linear;
+  transition: color 0.25s linear;
+}
+.more:hover{
+  color: #3da744;
+}
+
+.frame{
+  position: relative;
+  height: 40%;
+
+  background: url("images/pattern_17.png") center center;
+  background-size: auto;
+}
