@@ -10,7 +10,7 @@ html, body {
 }/*force no horizontal scroll*/
 
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1350px) {
   html, body {
   max-width: 100%;
 	margin: 0px;
@@ -87,7 +87,7 @@ a{
   text-align: left;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1350px) {
   .container{
     width: 1200px;
     height: auto;
@@ -118,7 +118,7 @@ a{
   width: 100%;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1350px) {
   .three-row{
       width: calc((100% - 5em) / 3);
   }
@@ -243,7 +243,7 @@ nav{
   padding: 0.5em;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1350px) {
   nav{
     position: fixed;
     top: 0;
