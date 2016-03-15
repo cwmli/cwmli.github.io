@@ -11,6 +11,7 @@ html, body {
 
 
 @media screen and (min-width: 1350px) {
+  html, body {
   max-width: 100%;
 	margin: 0px;
 	padding: 0px;
@@ -19,6 +20,7 @@ html, body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   font-size: 1em;	
+  }
 }
 
 h1, h3{
