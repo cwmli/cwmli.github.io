@@ -1,6 +1,12 @@
 $(document).ready(function(){
   $(".card").show(1500);
 
+  $("#wdc").mouseover(function(){
+  $("#wdc_c").fadeTo(0, 1);
+  }).mouseleave(function(){
+    $("#wdc_c").fadeTo(0, 0);
+  });
+
   $("#pen").mouseover(function(){
     $("#pen_c").fadeTo(0, 1);
   }).mouseleave(function(){
