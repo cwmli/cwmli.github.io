@@ -1,85 +1,156 @@
 <DOCTYPE html>
-<html lang="en-US">
+	<html lang="en-US">
+
 	<head>
 		<meta charset="UTF-8">
-		<link rel="stylesheet" type="text/css" href="theme.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+		 crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+		 crossorigin="anonymous"></script>
+
+		<link rel="stylesheet" type="text/css" href="theme.css">
 		<script src="js/navbar.js"></script>
-		<script src="js/cards.js"></script>
+
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+		 crossorigin="anonymous">
 
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
 		<title>Calvin's Collective</title>
 	</head>
-  <body>
+
+	<body>
 		<div class="top">^</div>
 		<div class="wrapper">
-			<div class="frame"></div>
-			<div class="container">
-			<nav id="bar">
-				<a class="symbol" href="index.html"></a>
-				<!--<a href="#contact/">CONTACT</a>
-				<a href="about/">ABOUT</a>-->
-				<a class="selected" href="#">PORTFOLIO</a>
-			</nav>
-			<div class="title">PORTFOLIO</div>
-			<div class="card three-row mask" id="wdc" style="background: url(images/wordclock.jpg) no-repeat center;">
-				<div class="mask-info" id="wdc_c">
-					WORDCLOCK<br>
-					A fancy way of telling time.<br>
-					<sub>FPGA - VERILOG</sub><br><br>
-					<a class="more" href="item/wordclock.html">DETAILS</a></div>
-			</div><!--
-			--><div class="card three-row mask" id="pen" style="background: url(images/PEN.png) no-repeat center;">
-				<div class="mask-info" id="pen_c">
-					PENFREE<br>
-					Online handwriting.<br>
-					<sub>RUBY ON RAILS</sub><br><br>
-					<a class="more" href="item/penfree.html">DETAILS</a></div>
-			</div><!--
-			--><div class="card three-row mask" id="art" style="background: url(images/ART.png) no-repeat center;">
-				<div class="mask-info" id="art_c">
-					ARTIFICE<br>
-					An android hack n' slash game - WIP.<br>
-					<sub>JAVA, OPENGLES 2.0</sub><br><br>
-					<a class="more" href="item/artifice.html">DETAILS</a></div>
-			</div><!--
-			--><div class="card three-row mask" id="bl" style="background: url(images/BS.png) no-repeat center;">
-				<div class="mask-info" id="bl_c">
-					BARCODE LOGIN<br>
-					Login w/ barcodes for <a href="http://4659warriors.com/">4659 Warrior Robotix</a>.<br>
-					<sub>JAVA</sub><br><br>
-					<a class="more" href="item/barcodelogin.html">DETAILS</a></div>
-			</div><!--
-			--><div class="card three-row mask" id="tt" style="background: black url(images/TT.png) no-repeat center;">
-				<div class="mask-info" id="tt_c">
-					TIMETRAK SCHEDULER<br>
-					Sports game scheduler.<br>
-					<sub>RUBY ON RAILS</sub><br><br>
-					<a class="more" href="item/timetrak.html">DETAILS</a></div>
-			</div><!--
-			--><div class="card three-row mask" id="omb" style="background: url(images/OMB.jpg) no-repeat center;">
-				<div class="mask-info" id="omb_c">
-					PHP MARKBOOK<br>
-					Basic markbook w/ averages, subjects, etc.<br>
-					<sub>PHP, MYSQL</sub><br><br>
-					<a class="more" href="item/phpmb.html">DETAILS</a></div>
-			</div><!--
-			--><div class="card three-row mask" id="xd" style="background: url(images/XD.png) no-repeat center;">
-				<div class="mask-info" id="xd_c">
-					X-DASH<br>
-					2D runner game.<br>
-					<sub>C#, XNA 4.0</sub><br><br>
-					<a class="more" href="item/xdash.html">DETAILS</a></div>
-			</div><!--
-			--><div class="card three-row mask" id="losh" style="background: url(images/LOSH.jpg) no-repeat center;">
-				<div class="mask-info" id="losh_c">
-					LEGEND OF SIR HAT<br>
-					2D platformer.<br>
-					<sub>PYTHON, PYGAME</sub><br><br>
-					<a class="more" href="item/losh.html">DETAILS</a></div>
+			<div class="jumbotron jumbotron-fluid" style="background-image: url(images/pattern_17.png)">
+				<div class="container">
+					<h1 class="display-3" style="border-bottom: none;">P<a class="fa fa-github" href="https://github.com/cwmli"></a>RTFOLIO</h1>
+				</div>
 			</div>
+			<div class="row">
+				<nav id="bar">
+					<a class="symbol" href="index.html"></a>
+					<!--<a href="#contact/">CONTACT</a>
+				<a href="about/">ABOUT</a>-->
+					<a class="selected" href="#">PORTFOLIO</a>
+				</nav>
+				<div class="col-md-10 offset-sm-1">
+					<div class="card-columns">
+						<div class="col-md-12">
+							<div class="card">
+								<img class="card-img-top img-fluid" src="images/sfront.gif">
+								<div class="card-block">
+									<h4 class="card-title">BLUETOOTH SPEAKER</h4>
+									<p class="card-text">Visual equalizer.</p>
+								</div>
+								<div class="card-block">
+									<a class="card-link" href="item/speaker.html">DETAILS</a>
+									<small class="float-right">ARDUINO, C, C++</small>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-12">
+							<div class="card">
+								<img class="card-img-top img-fluid" src="images/wordclock.jpg">
+								<div class="card-block">
+									<h4 class="card-title">WORDCLOCK</h4>
+									<p class="card-text">A fancy way to tell time.</p>
+								</div>
+								<div class="card-block">
+									<a class="card-link" href="item/wordclock.html">DETAILS</a>
+									<small class="float-right">FPGA, VERILOG</small>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-12">
+							<div class="card">
+								<img class="card-img-top img-fluid" src="images/PEN.png">
+								<div class="card-block">
+									<h4 class="card-title">PENFREE</h4>
+									<p class="card-text">Online handwriting.</p>
+								</div>
+								<div class="card-block">
+									<a class="card-link" href="item/penfree.html">DETAILS</a>
+									<small class="float-right">RUBY ON RAILS</small>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-12">
+							<div class="card">
+								<img class="card-img-top img-fluid" src="images/ART.png">
+								<div class="card-block">
+									<h4 class="card-title">ARTIFICE</h4>
+									<p class="card-text">An android hack n' slash game - WIP.</p>
+								</div>
+								<div class="card-block">
+									<a class="card-link" href="item/artifice.html">DETAILS</a>
+									<small class="float-right">JAVA, OPENGLES</small>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-12">
+							<div class="card" style="text-align: center;">
+								<img class="card-img-top img-respnsive" src="images/BS.png">
+								<div class="card-block" style="text-align: left;">
+									<h4 class="card-title">BARCODE LOGIN</h4>
+									<p class="card-text">Login w/ barcodes for 4659 Warrior Robotix</p>
+								</div>
+								<div class="card-block" style="text-align: left;">
+									<a class="card-link" href="item/barcodelogin.html">DETAILS</a>
+									<small class="float-right">JAVA</small>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-12">
+							<div class="card" style="text-align: center;">
+								<img class="card-img-top img-respnsive" src="images/TT.png" style="background: black">
+								<div class="card-block" style="text-align: left;">
+									<h4 class="card-title">TIMETRAK</h4>
+									<p class="card-text">Sports game scheduler.</p>
+								</div>
+								<div class="card-block" style="text-align: left;">
+									<a class="card-link" href="item/timetrak.html">DETAILS</a>
+									<small class="float-right">RUBY ON RAILS</small>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-12">
+							<div class="card">
+								<img class="card-img-top img-fluid" src="images/XD.png">
+								<div class="card-block">
+									<h4 class="card-title">X-DASH</h4>
+									<p class="card-text">2D runner game.</p>
+								</div>
+								<div class="card-block">
+									<a class="card-link" href="item/xdash.html">DETAILS</a>
+									<small class="float-right">C#, XNA 4.0</small>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="card">
+								<img class="card-img-top img-fluid" src="images/LOSH.jpg">
+								<div class="card-block">
+									<h4 class="card-title">LEGEND OF SIR HAT</h4>
+									<p class="card-text">2D platformer.</p>
+								</div>
+								<div class="card-block">
+									<a class="card-link" href="item/losh.html">DETAILS</a>
+									<small class="float-right">PYTHON, PYGAME</small>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-  </body>
-</html>
+	</body>
+
+	</html>
