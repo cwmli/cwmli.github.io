@@ -1,31 +1,61 @@
 <DOCTYPE html>
-<html lang="en-US">
-	<head>
-		<meta charset="UTF-8">
-		<link rel="stylesheet" type="text/css" href="../theme.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		<script src="../js/navbar.js"></script>
-		<script src="../js/cards.js"></script>
+	<html lang="en-US">
 
+	<head>
+		<title>Calvin's Collection</title>
+
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.1/css/tachyons.min.css" />
+		<link rel="stylesheet" href="../theme.css" />
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+		 crossorigin="anonymous">
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
-		<title>Calvin's Collective</title>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="../js/navbar.js"></script>
 	</head>
-  <body>
-		<div class="top"><i class="fa fa-chevron-up"></i></div>
-		<div class="wrapper">
-			<div class="frame"></div>
-			<div class="container">
-			<nav id="bar">
-				<a class="symbol" href="../index.html"></a>
-				<a class="selected" href="../index.html">PORTFOLIO</a>
-			</nav>
-			<div class="title">PENFREE</div>
-      <h1>Project details</h1>
-      <p>A discontinued handwriting web application test. Currently features writing by drawing on a canvas
-		 and basic canvas clearing function</p>
-      <h3>Date:</h3><div>DISCONTINUED</div>
-      <a class="button" href="https://github.com/underwaterotter/Penfree" target="_blank">Github</a>
+
+	<body>
+		<div class="w100">
+			<div class="w100">
+				<nav class="absolute top-0 pa3">
+					<a href="../index.html">
+						<img class="mw2" src="../images/title.png">
+					</a>
+				</nav>
+			</div>
+			<div class="mw100 ph3 ph5-ns br2 pv5 mb5" style="background-image: url(../images/pattern_17.png)">
+				<h1 class="f1 lh-title">P<a class="fa fa-github link" href="https://github.com/cwmli"></a>RTFOLIO</h1>
+			</div>
+			<div class="mw8 cf center pa1">
+				<header class="tc ph4">
+					<img src="../images/PEN.png" class="br3 ba b--black-10 h4 w4" alt="penfree">
+					<h1 class="f4 f3-ns black-90 mv3">
+						Penfree
+					</h1>
+					<h2 class="f6 f5-ns fw3 ttu tracked mt0">
+						Project Details
+					</h2>
+				</header>
+				<div class="cf">
+					<div class="fl w-100 w-50-ns pa4">
+						<h1 class="f5 ttu tracked">Description</h1>
+						<p class="f6 lh-copy">A handwriting web application test. Currently features writing by drawing on a canvas and basic canvas clearing function
+						</p>
+						<h1 class="f5 ttu tracked">Date:</h1>
+						<div class="f6 mb3">2016</div>
+						<h1 class="f5 ttu tracked">Links:</h1>
+						<a class="f4 link dim gray b--black-10 bg-near-white br-100 ba h2 w2 mr1 pa1 dib tc" href="https://github.com/underwaterotter/Penfree"
+						 target="_blank">
+							<i class="fa fa-github"></i>
+						</a>
+					</div>
+					<div class="fl w-100 w-50-ns pa4">
+						<h1 class="f5 ttu tracked">Gallery</h1>
+					</div>
+				</div>
+			</div>
 		</div>
-  </body>
+	</body>
 </html>

@@ -1,37 +1,82 @@
 <DOCTYPE html>
-<html lang="en-US">
-	<head>
-		<meta charset="UTF-8">
-		<link rel="stylesheet" type="text/css" href="../theme.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		<script src="../js/navbar.js"></script>
-		<script src="../js/cards.js"></script>
-
-		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
-		<title>Calvin's Collective</title>
-	</head>
-  <body>
-		<div class="top"><i class="fa fa-chevron-up"></i></div>
-		<div class="wrapper">
-			<div class="frame"></div>
-			<div class="container">
-			<nav id="bar">
-				<a class="symbol" href="../index.html"></a>
-				<a class="selected" href="../index.html">PORTFOLIO</a>
-			</nav>
-			<div class="title">X-DASH</div>
-			<div class="images">
-				<figure class="two-row"><a href="../images/xdashs3.JPG"><img src="../images/xdashs3.JPG"></a></figure>
-				<figure class="two-row"><a href="../images/xdashs1.JPG"><img src="../images/xdashs1.JPG"></a></figure>
-				<figure class="two-row"><a href="../images/xdashs2.JPG"><img src="../images/xdashs2.JPG"></a></figure>
-				<figure class="two-row"><a href="../images/xdashs4.JPG"><img src="../images/xdashs4.JPG"></a></figure>
+		<html lang="en-US">
+	
+		<head>
+			<title>Calvin's Collection</title>
+	
+			<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.1/css/tachyons.min.css" />
+			<link rel="stylesheet" href="../theme.css" />
+			<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+			 crossorigin="anonymous">
+			<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+			<link href='https://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+	
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+			<script src="../js/navbar.js"></script>
+		</head>
+	
+		<body>
+			<div class="w100">
+				<div class="w100">
+					<nav class="absolute top-0 pa3">
+						<a href="../index.html">
+							<img class="mw2" src="../images/title.png">
+						</a>
+					</nav>
+				</div>
+				<div class="mw100 ph3 ph5-ns br2 pv5 mb5" style="background-image: url(../images/pattern_17.png)">
+					<h1 class="f1 lh-title">P<a class="fa fa-github link" href="https://github.com/cwmli"></a>RTFOLIO</h1>
+				</div>
+				<div class="mw8 cf center pa1">
+					<header class="tc ph4">
+						<img src="../images/XD.png" class="br3 ba b--black-10 h3" alt="xdash">
+						<h1 class="f4 f3-ns black-90 mv3">
+							X-DASH
+						</h1>
+						<h2 class="f6 f5-ns fw3 ttu tracked mt0">
+							Project Details
+						</h2>
+					</header>
+					<div class="cf">
+						<div class="fl w-100 w-50-ns pa4">
+							<h1 class="f5 ttu tracked">Description</h1>
+							<p class="f6 lh-copy">A prototype endless-runner type game designed to mimic Sunny Day Sky by Orisnal.</p>
+							<h1 class="f6 ttu tracked">Features</h1>
+							<ul class="list measure center f6">
+								<li class="lh-copy">- Random car generation</li>
+								<li class="lh-copy">- Jumping and running actions based on character position from mouse</li>
+								<li class="lh-copy">- Parallax background, energy system</li>
+							</ul>
+							<h1 class="f5 ttu tracked">Date:</h1>
+							<div class="f6 mb3">2014</div>
+							<h1 class="f5 ttu tracked">Links:</h1>
+							<a class="f4 link dim gray b--black-10 bg-near-white br-100 ba h2 w2 mr1 pa1 dib tc" href="../files/xdash.rar" target="_blank">
+								<i class="fa fa-download"></i>
+							</a>
+							<a class="f4 link dim gray b--black-10 bg-near-white br-100 ba h2 w2 mr1 pa1 dib tc" href="https://github.com/cwmli/xdash" target="_blank"><i class="fa fa-github"></i></a>
+						</div>
+						<div class="fl w-100 w-50-ns pa4">
+							<h1 class="f5 ttu tracked">Gallery</h1>
+							<div class="fl w100 w-50-ns pr1">
+								<div class="shadow-hover br3 ba b--black-10 mt1">
+									<img class="db w-100" src="../images/xdashs1.JPG">
+								</div>
+								<div class="shadow-hover br3 ba b--black-10 mt1">
+									<img class="db w-100" src="../images/xdashs2.JPG">
+								</div>
+							</div>
+							<div class="fl w100 w-50-ns">
+								<div class="shadow-hover br3 ba b--black-10 mt1">
+									<img class="db w-100" src="../images/xdashs4.JPG">
+								</div>
+								<div class="shadow-hover br3 ba b--black-10 mt1">
+									<img class="db w-100" src="../images/xdashs3.JPG">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-      <h1>Project details</h1>
-      <p> X-DASH is the product of messing around in C# and XNA 4.0. X-DASH is unfinished and is more of a prototype than a game.</p>
-			<p>The idea was originally a peaceful endless runner type game similar to Sunny Day Sky by Orisnal, but it became a challenge to draw an appealing graphic style and learning the organization behind a game; as a result, I discontinued this project and decided to learn about the basis of game engines, starting with OPENGL.</p>
-			<h3>Date:</h3><div>2014</div><br>
-			<a class="button" href="../files/xdash.rar">Download</a><a class="button" href="https://github.com/cwmli/xdash" target="_blank">Github</a>
-		</div>
-  </body>
+		</body>
 </html>
