@@ -1,43 +1,81 @@
 <DOCTYPE html>
-<html lang="en-US">
-	<head>
-		<meta charset="UTF-8">
-		<link rel="stylesheet" type="text/css" href="../theme.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		<script src="../js/navbar.js"></script>
-		<script src="../js/cards.js"></script>
-
-		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
-		<title>Calvin's Collective</title>
-	</head>
-  <body>
-		<div class="top"><i class="fa fa-chevron-up"></i></div>
-		<div class="wrapper">
-			<div class="frame"></div>
-			<div class="container">
-			<nav id="bar">
-				<a class="symbol" href="../index.html"></a>
-				<a class="selected" href="../index.html">PORTFOLIO</a>
-			</nav>
-			<div class="title">BARCODE LOGIN</div>
-			<div class="images">
-				<figure class="two-row"><a href="../images/bsls1.png"><img src="../images/bsls1.png"></a></figure>
-				<figure class="two-row"><a href="../images/bsls2.png"><img src="../images/bsls2.png"></a></figure>
+		<html lang="en-US">
+	
+		<head>
+			<title>Calvin's Collection</title>
+	
+			<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.1/css/tachyons.min.css" />
+			<link rel="stylesheet" href="../theme.css" />
+			<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+			 crossorigin="anonymous">
+			<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+			<link href='https://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+	
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+			<script src="../js/navbar.js"></script>
+		</head>
+	
+		<body>
+			<div class="w100">
+				<div class="w100">
+					<nav class="absolute top-0 pa3">
+						<a href="../index.html">
+							<img class="mw2" src="../images/title.png">
+						</a>
+					</nav>
+				</div>
+				<div class="mw100 ph3 ph5-ns br2 pv5 mb5" style="background-image: url(../images/pattern_17.png)">
+					<h1 class="f1 lh-title">P<a class="fa fa-github link" href="https://github.com/cwmli"></a>RTFOLIO</h1>
+				</div>
+				<div class="mw8 cf center pa1">
+					<header class="tc ph4">
+						<img src="../images/BS.png" class="br3 ba b--black-10 h4 w4" alt="barcode_log">
+						<h1 class="f4 f3-ns black-90 mv3">
+							Barcode Login
+						</h1>
+						<h2 class="f6 f5-ns fw3 ttu tracked mt0">
+							Project Details
+						</h2>
+					</header>
+					<div class="cf">
+						<div class="fl w-100 w-50-ns pa4">
+							<h1 class="f5 ttu tracked">Description</h1>
+							<p class="f6 lh-copy">Barcode scanner to login for 4659 Warrior Robotix attendance tracking and is made using zxing scanner. 
+								The release version has user admin authentication to prevent unauthorized sign-ins. <br><br>The backend for the demo uses Ruby on Rails.
+							</p>
+							<h1 class="f6 ttu tracked">Demo</h1>
+							<ul class="list measure center f6 flex flex-column">
+									<li class="lh-copy">- Open the barcode scanner app</li>
+									<li class="lh-copy">- Scan this image to login:</li>
+									<img class="self-center pa3" src="https://www.barcodesinc.com/generator/image.php?code=617825&style=197&type=C128B&width=128&height=100&xres=1&font=4">
+									<li class="lh-copy">- Check the external link below</li>
+								</ul>	
+							<h1 class="f5 ttu tracked">Date:</h1>
+							<div class="f6 mb3">2015</div>
+							<h1 class="f5 ttu tracked">Links:</h1>
+							<a class="f4 link dim gray b--black-10 bg-near-white br-100 ba h2 w2 mr1 pa1 dib tc" href="http://barcodelogin.herokuapp.com" target="_blank"><i class="fa fa-external-link"></i></a>
+							<a class="f4 link dim gray b--black-10 bg-near-white br-100 ba h2 w2 mr1 pa1 dib tc" href="../files/barcodeloginscanner_DEMO.apk" target="_blank">
+								<i class="fa fa-download"></i>
+							</a>							
+							<a class="f4 link dim gray b--black-10 bg-near-white br-100 ba h2 w2 mr1 pa1 dib tc" href="https://github.com/cwmli/barcodeloginapp" target="_blank"><i class="fa fa-github"></i></a>
+							<a class="f4 link dim gray b--black-10 bg-near-white br-100 ba h2 w2 mr1 pa1 dib tc" href="https://github.com/cwmli/barcodelogin-demo" target="_blank"><i class="fa fa-diamond"></i></a>
+						</div>
+						<div class="fl w-100 w-50-ns pa4">
+							<h1 class="f5 ttu tracked">Gallery</h1>
+							<div class="fl w100 w-50-ns pr1">
+								<div class="shadow-hover br3 ba b--black-10 mt1">
+									<img class="db w-100" src="../images/bsls1.png">
+								</div>
+							</div>
+							<div class="fl w100 w-50-ns">
+								<div class="shadow-hover br3 ba b--black-10 mt1">
+									<img class="db w-100" src="../images/bsls2.png">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-      <h1>Project details</h1>
-      <p>Barcode scanner to login for 4659 Warrior Robotix attendance tracking and is made using zxing scanner. The release version has user admin authentication to prevent unauthorized sign-ins. Attendance information is sent using POST to a Ruby controller where the actual website attendence tracking is handled.</p>
-			<p>The barcode login scanner was requested by an admin of the robotics club, but it is not used in the actual attendance tracking due to poor internet connectivity leading to inefficient sign-in times. The barcode login is more of a "cool" way to check in for attendance. However, It was still a good introduction to the android api and mobile development.
-      <h3>Date:</h3><div>2015</div>
-      <h3>To use the demo:</h3>
-      <ol>
-          <li>Open the barcode scanner app.</li>
-          <li>Scan this image to login:<br>
-              <img src="https://www.barcodesinc.com/generator/image.php?code=617825&style=197&type=C128B&width=128&height=100&xres=1&font=4">
-          </li>
-          <li>Check <a style="color: black;" href="http://barcodelogin.herokuapp.com">barcodelogin.herokuapp.com</a></li>
-      </ol>
-      <a class="button" href="http://barcodelogin.herokuapp.com/" target="_blank">View</a><a class="button" href="../files/barcodeloginscanner_DEMO.apk">APK</a><a class="button" href="https://github.com/underwaterotter/barcodeloginapp" target="_blank">Github</a>
-		</div>
-  </body>
+		</body>
 </html>
