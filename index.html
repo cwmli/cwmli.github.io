@@ -2,127 +2,92 @@
 	<html lang="en-US">
 
 	<head>
-		<meta charset="UTF-8">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
-		 crossorigin="anonymous">
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
-		 crossorigin="anonymous"></script>
+		<title>Calvin's Collection</title>
 
-		<link rel="stylesheet" type="text/css" href="theme.css">
-		<script src="js/navbar.js"></script>
-
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.1/css/tachyons.min.css" />
+		<link rel="stylesheet" href="theme.css" />
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
 		 crossorigin="anonymous">
-
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
-		<title>Calvin's Collection</title>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="js/navbar.js"></script>
 	</head>
 
 	<body>
-		<div class="top"><i class="fa fa-chevron-up"></i></div>
-		<div class="wrapper">
-			<div class="jumbotron jumbotron-fluid" style="background-image: url(images/pattern_17.png)">
-				<div class="container">
-					<h1 class="display-3" style="border-bottom: none;">P<a class="fa fa-github" href="https://github.com/cwmli"></a>RTFOLIO</h1>
-				</div>
-			</div>
-			<div class="row">
-				<nav id="bar">
-					<a class="symbol" href="index.html"></a>
-					<!--<a href="#contact/">CONTACT</a>
-				<a href="about/">ABOUT</a>-->
-					<a class="selected" href="#">PORTFOLIO</a>
+		<div class="w100">
+			<div class="w100">
+				<nav class="absolute top-0 pa3">
+					<a href="index.html">
+						<img class="mw2" src="images/title.png">
+					</a>
 				</nav>
-				<div class="col-md-10 offset-sm-1">
-					<div class="card-columns">
-						<div class="col-md-12">
-							<div class="card">
-								<img class="card-img-top img-fluid" src="images/sfront.gif">
-								<div class="card-block">
-									<h4 class="card-title">BLUETOOTH SPEAKER</h4>
-									<p class="card-text">Visual equalizer.</p>
-								</div>
-								<div class="card-block">
-									<a class="card-link" href="item/speaker.html">DETAILS</a>
-									<small class="float-right">ARDUINO, C, C++</small>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-md-12">
-							<div class="card">
-								<img class="card-img-top img-fluid" src="images/wordclock.jpg">
-								<div class="card-block">
-									<h4 class="card-title">WORDCLOCK</h4>
-									<p class="card-text">A fancy way to tell time.</p>
-								</div>
-								<div class="card-block">
-									<a class="card-link" href="item/wordclock.html">DETAILS</a>
-									<small class="float-right">FPGA, VERILOG</small>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-md-12">
-							<div class="card" style="text-align: center;">
-								<img class="card-img-top img-respnsive" src="images/BS.png">
-								<div class="card-block" style="text-align: left;">
-									<h4 class="card-title">BARCODE LOGIN</h4>
-									<p class="card-text">Login w/ barcodes for 4659 Warrior Robotix</p>
-								</div>
-								<div class="card-block" style="text-align: left;">
-									<a class="card-link" href="item/barcodelogin.html">DETAILS</a>
-									<small class="float-right">JAVA</small>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-md-12">
-							<div class="card" style="text-align: center;">
-								<img class="card-img-top img-respnsive" src="images/TT.png" style="background: black">
-								<div class="card-block" style="text-align: left;">
-									<h4 class="card-title">TIMETRAK</h4>
-									<p class="card-text">Sports game scheduler.</p>
-								</div>
-								<div class="card-block" style="text-align: left;">
-									<a class="card-link" href="item/timetrak.html">DETAILS</a>
-									<small class="float-right">RUBY ON RAILS</small>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-md-12">
-							<div class="card">
-								<img class="card-img-top img-fluid" src="images/XD.png">
-								<div class="card-block">
-									<h4 class="card-title">X-DASH</h4>
-									<p class="card-text">2D runner game.</p>
-								</div>
-								<div class="card-block">
-									<a class="card-link" href="item/xdash.html">DETAILS</a>
-									<small class="float-right">C#, XNA 4.0</small>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-12">
-							<div class="card">
-								<img class="card-img-top img-fluid" src="images/LOSH.jpg">
-								<div class="card-block">
-									<h4 class="card-title">LEGEND OF SIR HAT</h4>
-									<p class="card-text">2D platformer.</p>
-								</div>
-								<div class="card-block">
-									<a class="card-link" href="item/losh.html">DETAILS</a>
-									<small class="float-right">PYTHON, PYGAME</small>
-								</div>
-							</div>
-						</div>
-					</div>
+			</div>
+			<div class="mw100 ph3 ph5-ns br2 pv5 mb5" style="background-image: url(images/pattern_17.png)">
+				<h1 class="f1 lh-title">P<a class="fa fa-github link" href="https://github.com/cwmli"></a>RTFOLIO</h1>
+			</div>
+			<div class="mw8 cf center pa1">
+				<div class="fl w-100 w-40-ns ph2">
+					<a href="" class="shadow-hover db no-underline mv2 hide-child">
+						<span class="absolute w-100 h-100 child cover blend-multiply white bg-black-50 flex flex-column items-center justify-center"
+							  style="background-image: url(images/wcfade.gif)">
+							<span class="f4 ttu">Word Clock</span>
+							<span class="f7 ttu pt1">fpga, verilog</span>
+						</span>
+						<img class="db w-100" src="images/wdc_1.JPG">
+					</a>
+					<a href="" class="shadow-hover db no-underline mv2 hide-child">
+						<span class="absolute w-100 h-100 child cover blend-multiply white bg-black-50 flex flex-column items-center justify-center"
+							  style="background-image: url(images/viseq.gif)">
+							<span class="f4 ttu">Bluetooth Speaker</span>
+							<span class="f7 ttu pt1">arduino, c, c++</span>
+						</span>
+						<img class="db w-100" src="images/speaker.jpg">
+					</a>
+				</div>
+				<div class="fl w-100 w-30-ns ph2">
+					<a href="" class="shadow-hover db no-underline mv2 hide-child">
+						<span class="absolute w-100 h-100 child white bg-black-50 flex flex-column items-center justify-center">
+							<span class="f4 ttu">Legend of Sir Hat</span>
+							<span class="f7 ttu pt1">python, pygame</span>
+						</span>
+						<img class="db w-100" src="images/LOSH.jpg">
+					</a>
+					<a href="" class="shadow-hover db no-underline mv2 hide-child">
+						<span class="absolute w-100 h-100 child cover blend-multiply white bg-black-50 flex flex-column items-center justify-center"
+							  style="background-image: url(images/artmove.gif)">
+							<span class="f4 ttu">Artifice</span>
+							<span class="f7 ttu pt1">java, opengl es</span>
+						</span>
+						<img class="db w-100" src="images/ART.png">
+					</a>
+					<a href="" class="shadow-hover db no-underline mv2 hide-child">
+						<span class="absolute w-100 h-100 child white bg-black-50 flex flex-column items-center justify-center">
+							<span class="f4 ttu">Penfree</span>
+							<span class="f7 ttu pt1">ruby on rails</span>
+						</span>
+						<img class="db w-100" src="images/PEN.png">
+					</a>
+				</div>
+				<div class="fl w-100 w-30-ns ph2">
+					<a href="" class="shadow-hover db no-underline mv2 hide-child">
+						<span class="absolute w-100 h-100 child white bg-black-50 flex flex-column items-center justify-center">
+							<span class="f4 ttu">Timetrak Scheduler</span>
+							<span class="f7 ttu pt1">ruby on rails</span>
+						</span>
+						<img class="db w-100 bg-black-90" src="images/TT.png">
+					</a>
+					<a href="" class="shadow-hover db no-underline mv2 hide-child">
+						<span class="absolute w-100 h-100 child white bg-black-50 flex flex-column items-center justify-center">
+							<span class="f4 ttu">Barcode Scanner</span>
+							<span class="f7 ttu pt1">java, android</span>
+						</span>
+						<img class="db w-100" src="images/BS.png">
+					</a>
 				</div>
 			</div>
 		</div>
 	</body>
-
-	</html>
+</html>
